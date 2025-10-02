@@ -178,8 +178,6 @@ html {
   margin: 0px;
 }
 
-
-
 .about-home-visual {
   position: relative;
 }
@@ -188,21 +186,50 @@ html {
   width: 100%;
   max-width: 450px;
   aspect-ratio: 1;
-    background-image: url('Images/temprary-about-home.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("Images/temprary-about-home.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 40px;
 }
 
-.tech-badge {
-    position: absolute;
-    top: 20%;
-    left: -12%;
-    background: var(--tp-blue-main);
-    color: var(--tp-white);
-    padding: 0.8rem 1.8rem;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 30px;
+.tech-about-badge {
+  position: absolute;
+  top: 20%;
+  left: -12%;
+  background: var(--tp-blue-main);
+  color: var(--tp-white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* ========================================== */
+/* STATS*/
+/* ========================================== */
+.home-stats {
+  background-color: var(--tp-blue-main);
+}
+
+.home-stats .stats-container {
+  margin: 0 auto;
+  color: var(--tp-white);
+  padding: 3rem 2rem;
+}
+
+.home-stats .stat-item h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--tp-white);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.home-stats .stat-item p {
+  font-size: 1rem;
+  color: var(--tp-white);
+  line-height: 1.6;
+  font-weight: 400;
+  margin: 0;
 }
