@@ -195,6 +195,271 @@
       }
     }
 
+    /* About Section */
+    .about {
+      padding: 5rem 2rem;
+      background: var(--off-white);
+    }
+
+    .about-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-label {
+      color: #b0b0b0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-content h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+    }
+
+    .about-desc {
+      font-size: 1.1rem;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+
+    .about-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .visual-box {
+      width: 100%;
+      max-width: 450px;
+      aspect-ratio: 1;
+      background: #d8d8d8;
+      border-radius: 40px;
+    }
+
+    .tech-badge {
+      position: absolute;
+      top: 20%;
+      right: 10%;
+      background: var(--blue);
+      color: var(--white);
+      padding: 0.8rem 1.8rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 8px 25px rgba(62, 137, 255, 0.3);
+    }
+
+    .tech-badge::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      right: 30px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid var(--blue);
+    }
+
+    /* Stats Section */
+    .stats {
+      background: var(--blue);
+      padding: 3rem 2rem;
+    }
+
+    .stats-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-item p {
+      font-size: 1rem;
+      color: var(--white);
+      font-weight: 400;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 5rem 2rem;
+      background: var(--off-white);
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .services h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+    }
+
+    .services-desc {
+      font-size: 1.1rem;
+      color: var(--gray);
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-radius: 30px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-content {
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #a8c5ff;
+    }
+
+    .card-content h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--black);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #2a2a2a;
+      line-height: 1.7;
+    }
+
+    .card-visual {
+      background: #c9c9c9;
+      min-height: 300px;
+    }
+
+    .services-footer {
+      text-align: center;
+    }
+
+    .view-all-btn {
+      background: var(--blue);
+      color: var(--white);
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .view-all-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(62, 137, 255, 0.3);
+    }
+
+    @media (max-width: 1024px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        grid-template-columns: 1fr;
+      }
+
+      .card-visual {
+        min-height: 250px;
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .about-visual {
+        order: -1;
+      }
+
+      .tech-badge {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+
+      .stat-item h3 {
+        font-size: 2.5rem;
+      }
+
+      .services h2 {
+        font-size: 2.5rem;
+      }
+
+      .service-card {
+        grid-template-columns: 1fr;
+      }
+
+      .card-content {
+        padding: 2rem;
+      }
+
+      .card-content h3 {
+        font-size: 1.6rem;
+      }
+
+      .card-visual {
+        min-height: 200px;
+        order: -1;
+      }
+    }
+
     @media (max-width: 480px) {
       .logo {
         font-size: 1.5rem;
@@ -213,12 +478,148 @@
         padding: 0.9rem 2rem;
         font-size: 1rem;
       }
+
+      .about {
+        padding: 3rem 1rem;
+      }
+
+      .visual-box {
+        max-width: 100%;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .stat-item h3 {
+        font-size: 2rem;
+      }
+
+      .services h2 {
+        font-size: 2rem;
+      }
+
+      .nav-arrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
 <body>
- 
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">Brandify</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects" class="dropdown">Projects</a></li>
+        <li><a href="#blog" class="dropdown">Blog</a></li>
+        <li><a href="#pages">Pages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>GROW <span class="highlight">BRANDS'S</span><br>FUTURE</h1>
+      <p>We help our clients succeed by creating identities, digital experiences, and print materials that communicate clearly, achieve marketing goals and look fantastic</p>
+      <button class="cta-btn">Get Free Audit</button>
+      <div class="trust-badge">
+        TRUSTED BY <span class="number">+150</span> BRANDS
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="about-container">
+      <div class="about-content">
+        <p class="about-label">FASTEST AI CHATBOT</p>
+        <h2>Accurate, fast & source backed responses</h2>
+        <p class="about-desc">Business-ready chatbot responses backed by file & webpage sources, designed with anti-hallucination features to prevent irrelevant answers.</p>
+      </div>
+      <div class="about-visual">
+        <div class="visual-box"></div>
+        <div class="tech-badge">Advance Technology</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <h3>130+</h3>
+        <p>Successfully Delivered</p>
+      </div>
+      <div class="stat-item">
+        <h3>56+</h3>
+        <p>International</p>
+      </div>
+      <div class="stat-item">
+        <h3>71+</h3>
+        <p>National</p>
+      </div>
+      <div class="stat-item">
+        <h3>4.8/5</h3>
+        <p>Success Rate</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="services-container">
+      <h2>SERVICES</h2>
+      <p class="services-desc">Whether you're a startup, global enterprise, or somewhere in between, we offer the very best digital marketing services designed for your unique brand needs.</p>
+    </div>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Search Engine Optimization</h3>
+          <p>Increase your online presence with our professional SEO strategies crafted to get your website higher on Google and other search engines. From keyword analysis and on-page optimization to link building and technical analysis, we make sure your website is search engine-friendly and user-focused. Our strategy is data-driven and crafted to deliver organic traffic, boost conversions, and establish long-term authority in your field. Whether you're a local company or international brand, our SEO professionals make sure your online existence is found by the correct people at the correct moment—helping you maintain a long-term advantage over competitors.</p>
+        </div>
+        <div class="card-visual"></div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Social Media Marketing</h3>
+          <p>Transform your brand's social presence with strategic campaigns that engage, inspire, and convert. We create compelling content and manage your social channels to build meaningful connections with your audience across all major platforms.</p>
+        </div>
+        <div class="card-visual"></div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Content Marketing</h3>
+          <p>Tell your brand story through high-quality, engaging content that resonates with your target audience. From blog posts to videos, we create content that drives traffic, builds authority, and converts visitors into loyal customers.</p>
+        </div>
+        <div class="card-visual"></div>
+      </div>
+
+      <div class="service-card">
+        <div class="card-content">
+          <h3>Pay-Per-Click Advertising</h3>
+          <p>Maximize your ROI with targeted PPC campaigns that deliver immediate results. Our experts manage your ad spend efficiently across Google Ads, social media platforms, and display networks to ensure every dollar works harder for your business.</p>
+        </div>
+        <div class="card-visual"></div>
+      </div>
+    </div>
+
+    <div class="services-footer">
+      <button class="view-all-btn">View All Services</button>
+    </div>
+  </section>
 
 </body>
 </html>
