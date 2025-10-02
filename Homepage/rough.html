@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandify</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    :root {
+      --blue: #3e89ff;
+      --white: #ffffff;
+      --black: #000;
+      --off-white: #f2f3f6;
+      --gray: #535353;
+    }
+
+    body {
+      background: var(--off-white);
+    }
+
+    /* Navbar */
+    nav {
+      background: var(--blue);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: opacity 0.3s;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.8;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown::after {
+      content: '▼';
+      font-size: 0.7rem;
+      margin-left: 0.3rem;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: var(--black);
+      color: var(--white);
+      border: none;
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 4px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 2rem;
+      color: var(--black);
+    }
+
+    .hero h1 .highlight {
+      color: var(--blue);
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--gray);
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-btn {
+      background: var(--blue);
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(62, 137, 255, 0.3);
+    }
+
+    .cta-btn::after {
+      content: '→';
+      font-size: 1.2rem;
+    }
+
+    .trust-badge {
+      margin-top: 4rem;
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    .trust-badge .number {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    /* Mobile Menu */
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background: var(--blue);
+        width: 100%;
+        padding: 2rem;
+        gap: 1.5rem;
+        transition: left 0.3s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      }
+
+      .nav-links.active {
+        left: 0;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        padding: 1rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+        padding: 1.5rem;
+      }
+
+      .hero {
+        padding: 2rem 1rem;
+      }
+
+      .cta-btn {
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ 
+
+
+</body>
+</html>
