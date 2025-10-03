@@ -32,14 +32,6 @@ html {
   color: var(--tp-black);
 }
 
-.white-heading-2 {
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 72px;
-  line-height: 72px;
-  color: var(--tp-white);
-}
-
 .paragraph-main {
   font-weight: 400;
   font-size: 24px;
@@ -47,13 +39,6 @@ html {
   max-width: 800px;
   color: var(--tp-black);
 }
-.paragraph-inner {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--tp-white);
-}
-
 .btn-big {
   outline: none;
   border: none;
@@ -96,6 +81,8 @@ html {
   gap: 30px;
   margin: 0px;
   list-style: none;
+
+  display: flex;
 }
 
 .nav-links li a {
@@ -153,6 +140,41 @@ html {
   color: var(--tp-black);
 }
 
+@media (max-width: 780px) {
+.hero h1 {
+    font-size: 100px;
+    line-height: 100px;
+}
+
+.paragraph-main {
+    font-size: 22px;
+}
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 80px;
+    line-height: 84px;
+}
+}
+
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 60px;
+    line-height: 64px;
+}
+
+.paragraph-main {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.black-heading-2 {
+    font-size: 60px;
+}
+}
+
 /* ========================================== */
 /* About Section */
 /* ========================================== */
@@ -205,6 +227,31 @@ html {
   line-height: 30px;
 }
 
+@media (max-width: 1200px) {
+  .tech-about-badge {
+    top: 34%;
+    left: -24%;
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-home-container {
+    grid-template-columns: 1fr;
+  }
+  .tech-about-badge {
+    top: 20%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 700px) {
+  .tech-about-badge {
+    display: none;
+}
+}
+
+
 /* ========================================== */
 /* STATS*/
 /* ========================================== */
@@ -215,7 +262,7 @@ html {
 .home-stats .stats-container {
   margin: 0 auto;
   color: var(--tp-white);
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
 }
 
 .home-stats .stat-item h3 {
@@ -234,6 +281,16 @@ html {
   margin: 0;
 }
 
+@media (max-width: 560px) {
+  .row.text-center {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.home-stats .stat-item h3 {
+    margin: 0px;
+}
+}
 /* ========================================== */
 /* SERVICE SECTION*/
 /* ========================================== */
@@ -248,10 +305,10 @@ html {
   margin-bottom: 4rem;
 }
 
-.service-home-card{
-    margin: 0px;
-    border-radius: 12px;
-    padding: 0px;
+.service-home-card {
+  margin: 0px;
+  border-radius: 12px;
+  padding: 0px;
 }
 .services-home-grid {
   margin: 0 auto;
@@ -279,26 +336,35 @@ html {
 }
 
 .home-card-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 20px !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 20px !important;
 }
 
-#home-service-card-1{
-   background: #A0C4FF;
+.card-image-visual.col-md-6{
+  padding: 0px !important;
+  border-radius: 12px !important;
 
-}#home-service-card-2{
- background: #FDCB6B;
-
-}#home-service-card-3{
-   background: #AFA2FF;
-
+  display: flex !important;
+  justify-content: flex-end !important;
 }
-#home-service-card-4{
-background: #91E983;
-
+#home-service-card-1 {
+  background: #a0c4ff;
+}
+#home-service-card-2 {
+  background: #fdcb6b;
+}
+#home-service-card-3 {
+  background: #afa2ff;
+}
+#home-service-card-4 {
+  background: #91e983;
 }
 
-
+@media (max-width: 1000px) {
+  .home-card-content.col-md-6 {
+    padding: 20px !important;
+}
+}
