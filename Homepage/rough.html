@@ -399,6 +399,131 @@
       box-shadow: 0 8px 20px rgba(62, 137, 255, 0.3);
     }
 
+    .view-all-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(62, 137, 255, 0.3);
+    }
+
+    /* Team Section */
+    .team {
+      background: var(--blue);
+      padding: 5rem 2rem;
+    }
+
+    .team-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .team-label {
+      color: rgba(255,255,255,0.8);
+      font-size: 1rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .team-header h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .team-slider {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 600px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .team-info {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .role-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border: 2px solid var(--black);
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      align-self: flex-start;
+    }
+
+    .team-info h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--black);
+      margin: 0.5rem 0;
+    }
+
+    .team-info p {
+      font-size: 0.95rem;
+      color: var(--gray);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--black);
+      transition: transform 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-3px);
+    }
+
+    .team-image {
+      background: #d0d0d0;
+      min-height: 350px;
+    }
+
+    .team-footer {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .view-team-btn {
+      background: var(--white);
+      color: var(--blue);
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .view-team-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+    }
+
     @media (max-width: 1024px) {
       .services-grid {
         grid-template-columns: 1fr;
@@ -411,6 +536,20 @@
       .card-visual {
         min-height: 250px;
         order: -1;
+      }
+
+      .team-card {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+      }
+
+      .team-image {
+        order: -1;
+        min-height: 300px;
+      }
+
+      .team-header h2 {
+        font-size: 2.5rem;
       }
     }
 
@@ -457,6 +596,18 @@
       .card-visual {
         min-height: 200px;
         order: -1;
+      }
+
+      .team-info {
+        padding: 2rem;
+      }
+
+      .team-info h3 {
+        font-size: 1.5rem;
+      }
+
+      .team-header h2 {
+        font-size: 2rem;
       }
     }
 
@@ -618,6 +769,35 @@
 
     <div class="services-footer">
       <button class="view-all-btn">View All Services</button>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <div class="team-header">
+      <p class="team-label">Clients Testimonials</p>
+      <h2>Our Creative Team</h2>
+    </div>
+    
+    <div class="team-slider">
+      <div class="team-card">
+        <div class="team-info">
+          <span class="role-badge">Senior Graphic Designer</span>
+          <h3>Olivia Reynolds</h3>
+          <p>With a keen eye for aesthetics and composition, Olivia transforms concepts into visually compelling designs. From marketing materials to digital graphics,</p>
+          <div class="social-links">
+            <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M13.73 4.5h1.19V2.5h-1.54c-1.88 0-3.38 1.5-3.38 3.38v1.62H8v2h2v7.5h2.5v-7.5h2l.5-2h-2.5V6.12c0-.62.26-.88.73-.88z"/></svg></a>
+            <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H6.5v-7H9v7zM7.75 8.5c-.8 0-1.45-.65-1.45-1.45s.65-1.45 1.45-1.45 1.45.65 1.45 1.45-.65 1.45-1.45 1.45zM18 17h-2.5v-3.5c0-1-.02-2.5-1.5-2.5s-1.5 1.15-1.5 2.4V17H10v-7h2.5v1h.03c.35-.65 1.18-1.35 2.47-1.35 2.65 0 3 1.75 3 4.02V17z"/></svg></a>
+            <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0122 7.5v9a5.5 5.5 0 01-5.5 5.5h-9A5.5 5.5 0 012 16.5v-9A5.5 5.5 0 017.5 2zm0 2A3.5 3.5 0 004 7.5v9A3.5 3.5 0 007.5 20h9a3.5 3.5 0 003.5-3.5v-9A3.5 3.5 0 0016.5 4h-9zM17 6a1 1 0 110 2 1 1 0 010-2zm-5 2a4 4 0 110 8 4 4 0 010-8zm0 2a2 2 0 100 4 2 2 0 000-4z"/></svg></a>
+            <a href="#"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 10-1.4 1.4l5.6 5.6-5.6 5.6a1 1 0 101.4 1.4l4.9-4.9 4.9 4.9a1 1 0 001.4-1.4L13.4 12.7l4.9-4.9a1 1 0 000-1.1z"/></svg></a>
+          </div>
+        </div>
+        <div class="team-image"></div>
+      </div>
+    </div>
+
+    <div class="team-footer">
+      <button class="view-team-btn">View All Team</button>
     </div>
   </section>
 

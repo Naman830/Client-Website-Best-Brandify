@@ -141,38 +141,37 @@ html {
 }
 
 @media (max-width: 780px) {
-.hero h1 {
+  .hero h1 {
     font-size: 100px;
     line-height: 100px;
-}
+  }
 
-.paragraph-main {
+  .paragraph-main {
     font-size: 22px;
-}
+  }
 }
 
 @media (max-width: 500px) {
   .hero h1 {
     font-size: 80px;
     line-height: 84px;
+  }
 }
-}
-
 
 @media (max-width: 400px) {
   .hero h1 {
     font-size: 60px;
     line-height: 64px;
-}
+  }
 
-.paragraph-main {
+  .paragraph-main {
     font-size: 16px;
     line-height: 26px;
-}
+  }
 
-.black-heading-2 {
+  .black-heading-2 {
     font-size: 60px;
-}
+  }
 }
 
 /* ========================================== */
@@ -248,9 +247,8 @@ html {
 @media (max-width: 700px) {
   .tech-about-badge {
     display: none;
+  }
 }
-}
-
 
 /* ========================================== */
 /* STATS*/
@@ -285,11 +283,11 @@ html {
   .row.text-center {
     flex-direction: column;
     gap: 10px;
-}
+  }
 
-.home-stats .stat-item h3 {
+  .home-stats .stat-item h3 {
     margin: 0px;
-}
+  }
 }
 /* ========================================== */
 /* SERVICE SECTION*/
@@ -343,7 +341,7 @@ html {
   padding: 0px 20px !important;
 }
 
-.card-image-visual.col-md-6{
+.card-image-visual.col-md-6 {
   padding: 0px !important;
   border-radius: 12px !important;
 
@@ -366,5 +364,120 @@ html {
 @media (max-width: 1000px) {
   .home-card-content.col-md-6 {
     padding: 20px !important;
+  }
 }
+
+/* ========================================== */
+/* TEAM Section */
+/* ========================================== */
+
+/* Team Section */
+.team-hero {
+  background: var(--tp-blue-main);
+  padding: 5rem 2rem;
+}
+
+.team-hero-header {
+  margin-bottom: 3rem;
+}
+.team-hero-label {
+  color: var(--tp-black);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0px;
+}
+
+.team-hero-slider {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.team-hero-card {
+  width: 620px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 10px;
+  border-width: 1px;
+  padding: 40px;
+  gap: 32px;
+  border: 1px solid #3e89ff;
+  background-color: var(--tp-white);
+}
+
+.team-hero-info {
+  gap: 1rem;
+}
+
+.role-hero-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 8px;
+  gap: 12px;
+  padding: 10px 16px;
+  border: 1px solid #000000;
+  color: var(--tp-black);
+  margin-bottom: 30px;
+}
+
+.team-hero-sliders-container{
+  overflow: hidden;
+}
+.team-hero-inner-heading{
+font-weight: 700;
+font-size: 24px;
+line-height: 100%;
+color: var(--tp-black);
+margin: 0px;
+}
+
+.team-hero-inner-para{
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+color: var(--tp-black);
+}
+
+.social-links-hero{
+  gap: 1rem;
+}
+
+.social-links-hero a {
+  color: var(--tp-black);
+  font-size: 20px;
+  transition: 0.4s ease-in;
+}
+
+.social-links-hero a:hover{
+  color: var(--tp-blue-main);
+}
+
+
+
+.team-hero-footer {
+  margin-top: 4rem;
+}
+
+.view-team-btn {
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+border-radius: 12px;
+padding: 18px 20px;
+
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: var(--tp-blue-main);
+background-color: var(--tp-white);
+}
+
+.view-team-btn:hover {
+  
 }
