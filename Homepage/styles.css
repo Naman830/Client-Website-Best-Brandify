@@ -476,7 +476,105 @@ html {
   background-color: var(--tp-white);
 }
 /* ========================================== */
-/* CONTACT Section Responsive */
+/* FEEDBACK Section  */
+/* ========================================== */
+.feedback-hero {
+  background: var(--tp-white);
+  padding: 5rem 2rem;
+}
+
+.feadback-hero-header {
+  margin-bottom: 3rem;
+}
+
+.feedback-hero-slider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  overflow: hidden;
+  width: 390px;
+}
+
+.feedback-hero-container {
+  gap: 40px;
+}
+.feedback-hero-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 26px;
+  background-color: var(--tp-white);
+  padding: 50px 20px;
+  background-color: var(--tp-white);
+  box-shadow: 0px 30px 70px 0px #00000008;
+  border-radius: 20px;
+
+
+}
+
+.feedback-hero-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.feedback-highlight-gray{
+    color: #00000080 !important;
+
+}
+
+.feedback-inner-heading {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--tp-black);
+  margin: 0px;
+}
+
+.feedback-hero-name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #00000080;
+  margin: 0px;
+}
+
+#feedback-star-color-1{
+  color: #1AB800;
+}
+
+#feedback-star-color-2{
+  color: #FFBA35;
+}
+
+#feedback-star-color-3{
+  color: #3E89FF;
+}
+
+#feedback-star-color-4{
+  color: #3E89FF;
+}
+
+#feedback-star-color-5{
+  color: #FFBA35;
+}
+
+#feedback-star-color-6{
+  color: #1AB800;
+}
+
+
+@media (max-width: 1000px) {
+  .feedback-hero-container{
+    flex-direction: column;
+  }
+}
+/* ========================================== */
+/* CONTACT Section  */
 /* ========================================== */
 
 .contact-hero {
@@ -512,7 +610,6 @@ html {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
-  justify-content: center;
   padding: 20px;
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
@@ -561,9 +658,7 @@ html {
 /* Right Form */
 .contact-hero-form {
   padding: 2rem;
-  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .form-row {
@@ -606,23 +701,6 @@ html {
 .form-hero-group textarea {
   resize: vertical;
   min-height: 120px;
-}
-
-/* Button */
-.contact-hero-form .btn-big {
-  margin-top: 1rem;
-  background-color: black;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.contact-hero-form .btn-big:hover {
-  background-color: var(--tp-blue-main);
-  color: #fff;
 }
 
 /* ========================================== */
